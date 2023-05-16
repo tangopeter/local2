@@ -1,0 +1,66 @@
+
+
+    // Post Env to 10x8 - 4.50,Courier local (Wellington) - 7.00,Courier North Island - 13.00,Courier South Island - 28.00,Courier Waiheke Island - 26.00,no charge by arrangement - 0.00
+    // Existing Customer,Radio,D-Photo Magazine,Word of Mouth,Brochure Mail Out,Other
+
+    // add_user_meta(1, 'delivery_method', "Post Env to 10x8 - 4.50", true);
+    // add_user_meta(1, 'rural_delivery', "no", true);
+    // add_user_meta(1, 'saturday_delivery', "no", true);
+    // add_user_meta(1, 'deliver_to_postal', "no", true);
+    // add_user_meta(1, 'postal_address', "123 dis terrace", true);
+    // add_user_meta(1, 'additional_instructions', "whatever", true);
+    // add_user_meta(1, 'source', "Existing Customer", true);
+
+
+    // echo '<div class="fiftyWide">';
+    // echo '<h3><hr>' . "Delivery method and details" . '</h3>';
+    // echo 'Delivery Method: ' . $current_user->delivery_method . '<br />';
+    // echo 'Rural Delivery: ' . $current_user->rural_delivery . '<br />';
+    // echo 'Saturday Delivery: ' . $current_user->saturday_delivery . '<br />';
+    // echo 'Deliver to Postal Address: ' . $current_user->deliver_to_postal . '<br />';
+    // echo 'Postal Address: ' . $current_user->postal_address . '<br />';
+    // echo 'Additional Instructions: ' . $current_user->additional_instructions . '<br />';
+    // echo 'How did you hear about us?: ' . $current_user->source . '<br />';
+    // echo '</div>';
+
+    // add_user_meta(1, 'print_cost', 1.20, true);
+    // add_user_meta(1, 'delivery_cost', 4.50, true);
+    // add_user_meta(1, 'gst', "0.85", true);
+    // add_user_meta(1, 'total', "6.55", true);
+
+
+    // echo '<div class="fiftyWide">';
+    // echo '<h3><hr>' . "Costs" . '</h3>';
+    // echo 'Print Cost: ' . $current_user->print_cost . '<br />';
+    // echo 'Delivery Cost: ' . $current_user->delivery_cost . '<br />';
+    // echo 'GST: ' . $current_user->gst . '<br />';
+    // echo 'Total: ' . $current_user->total . '<br />';
+
+    // echo '</div>';
+
+
+    // add_user_meta(1, 'address', '123 sum street', true);
+    // add_user_meta(1, 'suburb', 'Brooklyn', true);
+    // add_user_meta(1, 'city', 'Wellington', true);
+    // add_user_meta(1, 'country', 'New Zealand', true);
+    // add_user_meta(1, 'postcode', '6023', true);
+    // add_user_meta(1, 'phone', "021 123 4567", true);
+
+    // echo '<div class="fiftyWide">';
+    // echo '<h3><hr>' . "User Details" . '</h3>';
+    // echo 'ID: ' . $current_user->ID . '<br />';
+    // echo 'email: ' . $current_user->user_email . '<br />';
+    // echo 'login: ' . $current_user->user_login . '<br />';
+    // echo 'first name: ' . $current_user->user_firstname . '<br />';
+    // echo 'last name: ' . $current_user->user_lastname . '<br />';
+    // echo 'display name: ' . $current_user->display_name . '<br />';
+    // echo 'address: ' . $current_user->address . '<br />';
+    // echo 'Suburb: ' . $current_user->suburb . '<br />';
+    // echo 'City: ' . $current_user->city . '<br />';
+    // echo 'Country: ' . $current_user->country . '<br />';
+    // echo 'Postcode: ' . $current_user->postcode . '<br />';
+    // echo 'Phone: ' . $current_user->phone . '<br />';
+
+    // echo '</div>';
+
+    // echo '<hr>';

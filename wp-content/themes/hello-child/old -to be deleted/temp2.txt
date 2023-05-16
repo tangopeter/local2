@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * The template for displaying singular post-types: posts, pages and user-defined custom post types.
+ *
+ * @package HelloElementor
+ * Template Name: Order prints template 2...
+ * Template Post Type: page
+ */
+
+
+?>
+<?php get_header(); ?>
+<?php
+$ORDER_NUMBER = get_option('ORDER_NUMBER');
+// 	2047 	ORDER_NUMBER ID in options table
+global $wpdb;
+
+?>
+
+<main id=" content" <?php post_class('site-main'); ?> role="main">
+  <?php if (apply_filters('hello_elementor_page_title', true)) : ?>
+    <header class="page-header">
+      <!-- <?php the_title('<h1 class="entry-title">', '</h1>'); ?> -->
+    </header>
+
+  <?php endif; ?>
+
+
+  <div class="page-content">
+
+    <h1>Select your files to upload</h1>
+    <?php
+    $current_user = wp_get_current_user();
+    $user = $current_user->user_login;
+    echo '<h4>' . 'Welcome ' . $user . '</h4>';
+    echo '<ul>';
+    echo '<li>' . 'Please select your files to upload' . '</li>';
+    echo '<li>' . 'You may upload as many images as required,' . '<strong>' . ' but they must be the same settings/Quanity' . '</strong> ' . 'for each upload.' . '</li>';
+    echo '<li>' . 'Repeat upload for each different setting' . '</li>';
+    echo '<li>' . 'Click "Complete order" to confirm your details' . '</li>';
+    echo '</ul>';
+
+    ?>
+    <?php the_content();
+
+    drawOrderTable($ORDER_NUMBER);
+
+    echo '</div>';
+
+    ?>
+    <?php
+    ?>
+    <!-- <div class="completeEnd">
+      <button id="completeOrder" onclick="confirmOrder()">Complete Order</button>
+
+      <div id="confirm" hidden>
+        <p>Do you really want to complete the order?</p>
+        <button class="warning" onclick="confirmYes()">Yes</button>
+        <button onclick="confirmNo()">No</button>
+      </div>
+
+    </div> -->
+    <!-- <div class="orderNav">
+      <form method="post">
+        <input type="submit" class="button1" id="previous_order" name="previous_order" value="View Previous Order">
+        <input type="submit" class="button1" id="next_order" name="next_order" value="View Next Order">
+      </form>
+    </div> -->
+    <?php
+    // global $wpdb;
+    // if (isset($_POST['previous_order'])) {
+    // $ORDER_NUMBER = $ORDER_NUMBER - 1;-*
+    // update_option('ORDER_NUMBER', $ORDER_NUMBER);
+    // drawOrderTable($ORDER_NUMBER);
+    // } else if (isset($_POST['next_order'])) {
+    // $ORDER_NUMBER = $ORDER_NUMBER + 1;
+    // update_option('ORDER_NUMBER', $ORDER_NUMBER);
+    // drawOrderTable($ORDER_NUMBER);
+    // } else {
+    // drawOrderTable($ORDER_NUMBER);
+    // }
+    ?>
+
+
+  </div>
+  <!-- 
+  <script>
+    //show the confirmation div
+    function confirmOrder() {
+      document.getElementById("confirm").hidden = false
+    }
+
+    //redirect to the delete profile script
+    function confirmYes() {
+      location.href = 'https://ezylocal:8890/?page_id=2782';
+    }
+
+    //hide the confirmation div
+    function confirmNo() {
+      document.getElementById("confirm").hidden = true
+    }
+  </script> -->

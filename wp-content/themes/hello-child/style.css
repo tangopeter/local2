@@ -1,0 +1,832 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+/*
+    -global-color-primary: #C6191F;
+    -global-color-secondary: #111111;
+    -global-color-text: #444444;
+    -global-color-1dd3797: #FFFFFF;
+    -red -global-color-f9016c6: #C6191F;
+    -global-color-583487a: #A3A1A1;
+*/
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,c6c6c6+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 40%, #c6c6c6 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 40%, #c6c6c6 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 40%, #c6c6c6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  min-height: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+#content,
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  padding: 10px 20px;
+}
+
+
+
+.details {
+  width: 100% !important;
+  display: flex;
+  max-width: 1200px;
+}
+
+div.file_div_clean {
+  background: #ffffff;
+}
+
+.page-header .entry-title,
+.site-footer .footer-inner,
+.site-footer:not(.dynamic-footer),
+.site-header .header-inner,
+.site-header:not(.dynamic-header),
+body:not([class*="elementor-page-"]) .site-main {
+  max-width: 1200px;
+}
+
+/*
+Header
+*/
+.page-header {
+  padding: 0 15px;
+}
+
+/* Login form
+*/
+.eael-login-form-wrapper.eael-lr-form-wrapper.style-2,
+.elementor-2683 .elementor-element.elementor-element-d9f479a .lr-form-wrapper form {
+  width: 100%;
+  background-color: #0000;
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+.elementor-2683 .elementor-element.elementor-element-d9f479a .lr-form-wrapper {
+  width: 100%;
+}
+
+.eael-lr-form-wrapper.style-2 .lr-form-wrapper {
+  padding: 0;
+}
+
+.eael-lr-form-wrapper .eael-lr-password-wrapper button {
+  padding: 5px !important;
+}
+
+/* main Navigation */
+.hfe-menu-item {
+  padding: 62px 10px 15px !important;
+}
+
+.hfe-menu-item:hover,
+.current-menu-item {
+  border-bottom: 3px solid #A3A1A1;
+}
+
+/* footer */
+.hfe-menu-item:hover,
+.current-menu-item {
+  border-bottom: 0px solid #A3A1A1;
+}
+
+footer .hfe-nav-menu__layout-horizontal li.menu-item,
+footer .hfe-nav-menu__layout-horizontal>li.menu-item {
+  font-size: medium;
+  border-right: 1px solid #A3A1A1;
+}
+
+.elementor-element.elementor-element-fe89a64.elementor-widget.elementor-widget-text-editor a {
+  color: #A3A1A1;
+}
+
+.elementor-element.elementor-element-fe89a64.elementor-widget.elementor-widget-text-editor a:hover {
+  color: #444444;
+}
+
+/* Ezy Uploads */
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  width: 300px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: .25rem 0.5rem !important;
+  font-size: 14px !important;
+  background: #FFF;
+  color: #333333;
+}
+
+#wordpress_file_upload_userdata_1_0 {
+  display: none !important;
+}
+
+.file_userdata_message:disabled,
+.file_userdata_message_required:disabled {
+  width: 300px !important;
+}
+
+#wordpress_file_upload_block_2 {
+  width: 100% !important;
+}
+
+div.file_userdata_fieldwrapper,
+div.file_userdata_fieldwrapper_required,
+div.file_userdata_fieldwrapper_required_empty {
+  width: 100% !important;
+}
+
+
+
+.file_userdata_container {
+  margin: 10px 0 !important;
+}
+
+/* Labels */
+label.file_userdata_label {
+  width: 30% !important;
+  margin-left: 25px;
+}
+
+
+
+/* Required fields */
+#userdata_1_label_0::after,
+#userdata_1_label_1::after,
+#userdata_1_label_2::after,
+#userdata_1_label_23::after,
+#userdata_1_label_24::after,
+#userdata_1_label_25::after,
+#userdata_1_label_26::after,
+#userdata_1_label_27::after,
+#userdata_1_label_28::after {
+  content: '*' !important;
+  color: #C6191F;
+}
+
+form.file_input_uploadform,
+#upload_1 {
+  margin: 10px 0 !important;
+}
+
+div.file_filelist {
+  width: 95% !important;
+}
+
+.acf-field.acf-field-select .acf-label {
+  width: 100% !important;
+}
+
+.delPriceMethod,
+.ruralPrice,
+.satPrice {
+  margin: -15px 25px 0 40px !important;
+  background: #d4fcfa;
+  text-align: right !important;
+  padding: 0 5px 0 5px !important;
+  font-size: 14px;
+  width: 70px !important;
+  min-width: 70px;
+}
+
+.acf-field.acf-field-select.acf-field-640d61d5084e4 {
+  min-height: 115px;
+}
+
+.delPriceMethod {
+  margin: 5px 5px 0 0 !important;
+  float: right;
+}
+
+.acf-field .acf-label {
+  vertical-align: top;
+  margin: 7px 0px 10px !important;
+  font-size: 15px;
+  font-weight: 600 !important;
+  width: 55% !important;
+  float: left !important;
+}
+
+/* ******************************
+ new form
+ ****************************** */
+/* uploadmessage */
+#wordpress_file_upload_message_1 {
+  width: 60%;
+  margin: 10px 0;
+  height: 35px;
+}
+
+#userdata_2_0 {
+  margin: 0 10px !important;
+}
+
+/* Job number panel */
+#wordpress_file_upload_userdata_1_0,
+#wordpress_file_upload_userdata_2_0 {
+  font-weight: 600;
+  display: flex;
+  order: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #bbb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 0 20px;
+  height: 50px;
+}
+
+#userdata_1_0,
+#userdata_2_1 {
+  background: #ffe4e8;
+  padding: 4px 20px 10px;
+  border-radius: 5px !important;
+  width: 200px !important;
+  margin: 0 20px !important;
+}
+
+#userdata_1_label_0,
+#userdata_2_label_0 {
+  width: 15% !important;
+  margin-left: 0 !important;
+}
+
+/* job number */
+#userdata_1_field_0,
+#userdata_2_field_1 {
+  border: none;
+  width: 100px !important;
+  margin: 0 0 0 10px !important;
+  font-weight: 600;
+}
+
+/* Sections */
+#wordpress_file_upload_block_1 {
+  margin: 15px 0 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+#wordpress_file_upload_form_1,
+#wordpress_file_upload_textbox_1,
+#wordpress_file_upload_filelist_1,
+#wordpress_file_upload_submit_1 {
+  width: 75%;
+  display: flex;
+  order: 5;
+}
+
+#wordpress_file_upload_filelist_1 {
+  min-height: 20px;
+  padding: 10px 0 0;
+}
+
+#wordpress_file_upload_userdata_1_1 {
+  margin: 20px 0 0;
+  border-radius: 10px !important;
+  padding: 10px;
+}
+
+#wordpress_file_upload_userdata_1_1 {
+  order: 5 !important;
+}
+
+#wordpress_file_upload_userdata_1_5 {
+  order: 5;
+  margin: 0 !important;
+}
+
+.file_userdata_message,
+.file_userdata_message_required {
+  padding: 2px 10px !important;
+  margin: 5px 0 5px 0 !important;
+  height: auto !important;
+}
+
+/* file selection */
+#fileName_1,
+#fileName_2 {
+  width: 800px;
+}
+
+#wordpress_file_upload_form_1,
+#wordpress_file_upload_form_2 {
+  width: 300px;
+  height: 60px;
+}
+
+#uploadform_1,
+#uploadform_2 {
+  width: 250px;
+  height: 48px;
+}
+
+div.file_filelist_file_div_with_remove {
+  height: 30px !important;
+}
+
+/* upload files button */
+#input_1,
+#upload_1,
+#input_2,
+#upload_2 {
+  background: #C6191F;
+  color: #FFFFFF !important;
+  border: 1px solid #C6191F;
+  font-weight: 600;
+  padding: 5px 40px 5px 40px !important;
+  width: auto;
+  margin: 10px 0 0 !important;
+  border-radius: 5px;
+  height: 37px;
+}
+
+#input_1 {
+  width: 250px;
+}
+
+#input_1:hover,
+#upload_1:hover,
+#input_2:hover,
+#upload_2:hover {
+  background: #FFFFFF;
+  color: #C6191F !important;
+}
+
+#input_2,
+.button1 {
+  padding: 0px 20px 0px 20px !important;
+  width: 180px;
+  margin: 20px 0 0 !important;
+  height: 37px;
+  text-align: center;
+  border: 1px solid #C6191F;
+  border-radius: 5px;
+  color: #C6191F;
+}
+
+.button1:hover {
+  background: #C6191F;
+  color: #FFFFFF;
+}
+
+/* print choices */
+
+#userdata_1_1,
+#userdata_1_2,
+#userdata_1_3,
+#userdata_1_4,
+#userdata_1_5,
+#userdata_1_6,
+#userdata_1_7 {
+  flex-direction: column;
+  display: inline-flex;
+}
+
+#wordpress_file_upload_userdata_1_1 {
+  display: inline-flex;
+  width: 100% !important;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #DDD;
+  background: linen;
+}
+
+#userdata_1_1,
+#userdata_1_2,
+#userdata_1_3,
+#userdata_1_4,
+#userdata_1_5,
+#userdata_1_6,
+#userdata_1_7 {
+  flex-direction: column;
+  display: inline-flex;
+  padding: 0 5px 0 5px;
+  height: 60px;
+}
+
+#userdata_1_label_1,
+#userdata_1_label_2,
+#userdata_1_label_3,
+#userdata_1_label_4,
+#userdata_1_label_5,
+#userdata_1_label_6,
+#userdata_1_label_7 {
+  width: auto !important;
+  margin: 0;
+  text-align: left;
+}
+
+.file_userdata_listbox,
+.file_userdata_dropdown {
+  width: 100%;
+  height: auto !important;
+  padding: 5px !important;
+  margin: 7px 10px 0 0 !important;
+}
+
+#userdata_1_field_1,
+.file_userdata_listbox,
+.file_userdata_dropdown {
+  width: 250px;
+  margin: 5px 0;
+}
+
+#userdata_1_field_6,
+#userdata_1_field_7 {
+  background: #d4fcfa;
+  border: none !important;
+  padding: 2px 5px 1px !important;
+  width: 80px !important;
+  text-align: right;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 8px 0 5px 0px !important;
+  font-weight: bold;
+  font-size: 15px !important;
+}
+
+#userdata_1_field_7 {
+  width: 100px !important;
+}
+
+/* *******************************************
+paper choices
+********************************************
+*/
+
+/* QTY */
+#userdata_1_2 {
+  width: 65px;
+}
+
+#userdata_1_field_2 {
+  width: 45px !important;
+}
+
+/* Print Costs*/
+#userdata_1_field_4,
+#userdata_1_field_5 {
+  width: 60px;
+  border: none !important;
+  text-align: right;
+  padding: 5px 5px 0 0 !important;
+}
+
+/* Size & Finish */
+#userdata_1_label_4,
+#userdata_1_label_5,
+#userdata_1_label_6,
+#userdata_1_label_7 {
+  text-align: right;
+  background: transparent;
+}
+
+.file_userdata_checkbox_description {
+  width: auto !important;
+  height: auto !important;
+}
+
+/* How Did you hear about us? */
+#userdata_1_label_29 {
+  width: 30%;
+}
+
+#userdata_1_field_29 {
+  width: 25% !important;
+  margin: 5px 0 10px 25px !important;
+}
+
+/* text area fields */
+#userdata_1_field_17,
+#userdata_1_field_18 {
+  width: 90% !important;
+  margin: 10px 25px !important;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Update buttons */
+.updateButton1,
+.updateButton2 {
+  display: flex;
+  margin: 0 0 0 25px;
+  color: #C6191F !important;
+}
+
+.updateButton2 {
+  width: 220px !important;
+  margin: 0 0 20px 25px;
+}
+
+.updateButton1:hover,
+.updateButton2:hover {
+  background: #C6191F !important;
+  color: #FFFFFF !important;
+}
+
+.completeEnd {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+#compleOrder {
+  order: 0;
+  margin: 0 20px 9 9;
+}
+
+#confirm {
+  margin: 0 0 20px 20px;
+  width: 100%;
+}
+
+#confirm h3 {
+  margin: 0 !important;
+}
+
+.orderNav {
+  width: 100% !important;
+  margin: 20px 0 0 0;
+  order: 3;
+  text-align: right;
+}
+
+
+label.file_messageblock_fileheader_label {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 1.25 !important;
+}
+
+.acf-fields.acfe-column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wfu_browser_container.wfu_browser-1 {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.wfu_browser_th.wfu_col-2.wfu_browser-1 {
+  width: 5%;
+}
+
+.wfu_browser_th.wfu_col-3.wfu_browser-1 {
+  width: 10%;
+}
+
+.wfu_display_fields select {
+  width: auto !important;
+}
+
+
+
+.aClass {
+  background: linen;
+  float: left;
+}
+
+table td,
+table th {
+  padding: 10px;
+  line-height: 1.25;
+}
+
+.wfu_browser_td.wfu_col-1.wfu_browser-1 {
+  max-width: 85px;
+}
+
+.wfu_browser_td.wfu_col-4.wfu_browser-1,
+.wfu_browser_td.wfu_col-5.wfu_browser-1 {
+  max-width: 200px;
+}
+
+tfoot {
+  border-top: 2px solid;
+}
+
+tfoot .wfu_browser_td.wfu_col-9.wfu_browser-1 {
+  font-weight: 700;
+}
+
+/* /* #userdata_2_1 {
+  display: none;
+} */
+/* .fiftyWide {
+  width: 33%;
+  float: left;
+  padding: 0 2% 2% 0;
+} */
+
+/* .acf-field-columngroup.column-layout-1_3 {
+  width: 33.33333%;
+  float: left !important;
+} */
+
+/* .costs {
+  background: #fee5ec;
+  border: 1px solid #fb9ec1;
+  width: 25%;
+  padding: 1%;
+  line-height: 1;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+/* .elementor-element-709e587 .acf-form-submit {
+  display: none;
+} */
+
+.totalPrintPrice {
+  background: lemonchiffon;
+  font-weight: 700;
+}
+
+
+/* User details */
+#message p {
+  color: transparent;
+}
+
+.acf-fields>.acf-field {
+  padding: 5px 0 5px 0 !important;
+  border: none !important;
+}
+
+.acf-field.acf-field-true-false.acf-field-640d61d5084ec,
+.acf-field.acf-field-true-false.acf-field-640d61d508503,
+.acf-field.acf-field-true-false.acf-field-640d61d50850d {
+  min-height: 50px;
+}
+
+.acf-field.acf-field-text.costings {
+  float: left !important;
+}
+
+.acf-field.acf-field-text.acf-field-640d609fc5c17.costings {
+  border-top: 2px solid #555 !important;
+}
+
+
+.acf-field.costings .acf-input input {
+  background: #FFF !important;
+  border: none !important;
+  text-align: right;
+  font-size: 16px !important;
+  font-weight: 600;
+  width: 45%;
+  float: right;
+  color: #333 !important;
+}
+
+.hideField {
+  display: none;
+}
+
+.showField {
+  display: block;
+}
+
+#side-sortables .acf-fields>.acf-field.acfe-no-label>.acf-label,
+.acf-field.acfe-no-label>.acf-label {
+  margin: 0;
+  width: 0 !important;
+}
+
+#costsCalculator .acf-form-submit {
+  display: none;
+}
+
+/* .completeTheOrder {
+  background: lemonchiffon;
+  min-height: 100px;
+  max-width: 1140px;
+  margin: 10px 5% 10px 0;
+  padding: 10px;
+  width: 45%;
+  float: left;
+} */
+
+.completeTheOrder {
+  background: #fcf9df;
+  min-height: 100px;
+  max-width: 1140px;
+  margin: 10px 3.3% 10px 0;
+  padding: 10px;
+  width: 100%;
+  float: left;
+  border: 1px solid #f4e02c;
+  border-radius: 5px;
+}
+
+.completeTheOrder1 {
+  max-width: 20% !important;
+  margin: 10px 2% 10px 0 !important;
+}
+
+.completeTheOrder2 {
+  max-width: 28% !important;
+  margin: 10px 2% 10px 0 !important;
+}
+
+.completeTheOrder h3 {
+  margin: 0;
+}
+
+.completeTheOrder3 .acf-field .acf-label {
+  vertical-align: top;
+  margin: 7px 0px 10px !important;
+  font-size: 15px;
+  font-weight: 600 !important;
+  width: 30% !important;
+  float: left !important;
+}
+
+#colophon {
+  display: block !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 15px auto;
+  border-top: 1px solid;
+}
+
+.myData {
+  background: rgb(250, 217, 217);
+  min-height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mydata1 {
+  order: 5;
+}
+
+.mydata2 {
+  order: 6;
+}
+
+.myData3 {
+  background: rgb(207, 247, 179);
+  min-height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.myDiv1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.myDiv2 {
+  order: 4;
+}
+
+.myFooter {
+  order: 10;
+}

@@ -1,0 +1,94 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* Admin Menu
+ */
+#menu-appearance,
+.wp-not-current-submenu.wp-menu-separator.woocommerce,
+.wp-not-current-submenu.wp-menu-separator,
+#toplevel_page_tve_dash_section {
+  height: 2px;
+  margin: 5px 0px !important;
+  border-top: 1px dashed #c7a589 !important;
+}
+.editor-post-title__block .editor-post-title__input,
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  color: #666;
+}
+/* Pages listing
+ */
+#order {
+  width: 50px;
+}
+/* Login Page
+ */
+#login {
+  width: 500px !important;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login #login h1 a {
+  background-image: url('/wp-content/uploads/marcos-organic-pizzas.png');
+  width: 312px;
+  height: 131px;
+  background-size: 312px;
+}
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="radio"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="password"]:focus,
+input[type="checkbox"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #C0202A !important;
+  box-shadow: 0 0 2px #C0202A66 !important;
+}
+.login #nav a:hover,
+.login #backtoblog a:hover {
+  color: #32373c !important;
+}
+.login .button-primary {
+  background: #C0202A !important;
+  border: 1px solid #C0202A !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+.login .button-primary:hover {
+  background: #FFFFFF !important;
+  color: #C0202A !important;
+}
+.login #login_error,
+.login .message,
+.login .success {
+  border-left: 5px solid #C0202A !important;
+}
+.login #backtoblog {
+  float: left;
+  margin: 15px 0px 0 0 !important;
+}
+.login #nav {
+  margin: 15px 0px 0 0 !important;
+  text-align: right !important;
+  float: right;
+}
+.login #backtoblog:hover,
+.login #nav:hover {
+  color: #32373c !important;
+}

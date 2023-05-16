@@ -2,6 +2,7 @@
 
 function doSomethingElse()
 {
+
   // echo '<div class="completeTheOrder">';
   // echo '<h3>' . "not complete" . '</h3>';
   // echo '</div>';
@@ -9,6 +10,7 @@ function doSomethingElse()
 
 function function_alert($ORDER_NUMBER)
 {
+
   // echo '<script>' .
   //   'confirm("$ORDER_NUMBER");' .
   //   '</script>';
